@@ -1,17 +1,17 @@
 import path from 'node:path';
 
-import e, { Router } from "express";
+import { Router } from "express";
 import multer from "multer";
 
-import { listCategories } from "./useCases/categories/listCategories";
 import { createCategory } from "./useCases/categories/createCategory";
-import { listProducts } from "./useCases/products/listProducts";
-import { createProduct } from "./useCases/products/createProduct";
+import { listCategories } from "./useCases/categories/listCategories";
 import { listProductsByCategories } from "./useCases/categories/listProductsByCategories";
-import { listOrders } from "./useCases/orders/listOrders";
+import { changeOrderStatus } from "./useCases/orders/changeOrderStatus";
 import { createOrder } from "./useCases/orders/createOrder";
-import {deleteOrder} from "./useCases/orders/deleteOrder";
-import {changeOrderStatus} from "./useCases/orders/changeOrderStatus";
+import { deleteOrder } from "./useCases/orders/deleteOrder";
+import { listOrders } from "./useCases/orders/listOrders";
+import { createProduct } from "./useCases/products/createProduct";
+import { listProducts } from "./useCases/products/listProducts";
 
 export const router = Router();
 
