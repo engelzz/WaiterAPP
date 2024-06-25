@@ -1,7 +1,7 @@
-import { Board, OrdersContainer } from "./styles.ts";
+import { useState } from "react";
 import { Order } from "../../types/Order.ts";
-import {useState} from "react";
-import {OrderModal} from "../Modal/OrderModal.tsx";
+import { OrderModal } from "../Modal/OrderModal.tsx";
+import { Board, OrdersContainer } from "./styles.ts";
 
 interface OrderBoardProps {
   icon: string;
@@ -39,12 +39,12 @@ export function OrderBoard({ icon, title, orders }: OrderBoardProps) {
 
       {orders.length > 0 && (
         <OrdersContainer>
-          {orders.map((order) => {
+          {orders.map((order) => (
             <button type="button" key={order._id} onClick={() => handleOpenModal(order)}>
               <strong> Mesa {order.table}</strong>
-              <span>{order.products.length}</span>
+              <span>{order.products.length} itens</span>
             </button>
-          })}
+          ))}
         </OrdersContainer>
       )}
     </Board>
