@@ -6,8 +6,8 @@ export const Board = styled.div`
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex: 1;
 
   > header {
