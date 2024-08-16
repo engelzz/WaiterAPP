@@ -1,6 +1,6 @@
 # Waiter APP
 
-Uma breve descrição sobre o que esse projeto faz e para quem ele é
+WaiterAPP is a system that provides restaurants and waiters an web and mobile app which can register customers orders and sending it to the kitchen in the same time
 
 ## Demonstration
 
